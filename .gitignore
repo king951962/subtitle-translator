@@ -1,0 +1,12 @@
+.env
+.tmp/
+input/
+output/
+credentials.json
+token.json
+__pycache__/
+*.pyc
+*.backup_*
+.claude/
+CLAUDE.local.md
+uv.lock

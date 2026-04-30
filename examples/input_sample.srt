@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:04,280
+Hi everyone. So by now you have probably heard of ChatGPT.
+
+2
+00:00:04,280 --> 00:00:08,160
+It has taken the world and the AI community by storm.
+
+3
+00:00:08,160 --> 00:00:13,600
+What I'd like to do is build something like ChatGPT from scratch.
+
+4
+00:00:13,600 --> 00:00:18,400
+We're going to train a transformer-based language model on text data.
+
+5
+00:00:18,400 --> 00:00:23,200
+By the end, you'll understand exactly how these models work under the hood.

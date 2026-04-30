@@ -1,0 +1,21 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.280
+大家好。相信你們現在應該都聽說過 ChatGPT 了。
+Hi everyone. So by now you have probably heard of ChatGPT.
+
+00:00:04.280 --> 00:00:08.160
+它已經席捲了全球和 AI 社群。
+It has taken the world and the AI community by storm.
+
+00:00:08.160 --> 00:00:13.600
+我想做的是從零開始建立一個類似 ChatGPT 的東西。
+What I'd like to do is build something like ChatGPT from scratch.
+
+00:00:13.600 --> 00:00:18.400
+我們將在文字資料上訓練一個基於 Transformer 的語言模型。
+We're going to train a transformer-based language model on text data.
+
+00:00:18.400 --> 00:00:23.200
+到最後，你將完全理解這些模型在底層是如何運作的。
+By the end, you'll understand exactly how these models work under the hood.
