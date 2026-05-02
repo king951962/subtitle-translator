@@ -103,7 +103,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="逐段翻譯字幕（Ollama 本地模型）")
     parser.add_argument("--input", "-i", required=True, help="輸入 JSON 檔路徑")
     parser.add_argument("--output", "-o", required=True, help="輸出 JSON 檔路徑")
-    parser.add_argument("--model", default="qwen2.5:7b", help="Ollama 模型名稱")
+    parser.add_argument("--model", default="gemma3:12b", help="Ollama 模型名稱")
     args = parser.parse_args()
 
     segments = load_segments(args.input)

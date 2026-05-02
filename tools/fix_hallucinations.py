@@ -306,6 +306,7 @@ def retranslate_with_validation(
     model: str, text: str, max_retries: int
 ) -> tuple[str, bool]:
     """Retranslate a segment and validate. Returns (translation, success)."""
+    result = ""
     for attempt in range(max_retries):
         temp = TEMPERATURE_SCHEDULE[min(attempt, len(TEMPERATURE_SCHEDULE) - 1)]
 
@@ -359,7 +360,7 @@ def retranslate_with_validation(
         except Exception as e:
             print(f"  [retry {attempt + 1}] error: {e}", file=sys.stderr)
 
-    return result if "result" in dir() else "", False
+    return result, False
 
 
 def _get_strict_prompt() -> str:
@@ -414,7 +415,7 @@ def _get_strict_prompt() -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description="偵測並修復翻譯中的 LLM 幻覺")
     parser.add_argument("--input", "-i", required=True, help="translated.json 路徑")
-    parser.add_argument("--model", default="qwen2.5:7b", help="Ollama 模型名稱")
+    parser.add_argument("--model", default="gemma3:12b", help="Ollama 模型名稱")
     parser.add_argument("--max-retries", type=int, default=3, help="每段最大重試次數")
     parser.add_argument("--dry-run", action="store_true", help="只偵測不修改")
     args = parser.parse_args()
