@@ -1,1 +1,0 @@
-# 無外部套件依賴（翻譯使用本地 Ollama，標準庫 urllib.request 呼叫）
