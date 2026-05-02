@@ -1,7 +1,7 @@
 """翻譯字幕段落：逐段呼叫 Ollama，純文字輸出，斷點續傳。
 
 用法：
-    python tools/translate_segments.py --input <json> --output <json> [--model llama3.1:latest]
+    python tools/translate_segments.py --input <json> --output <json> [--model gemma3:12b]
 """
 
 import argparse

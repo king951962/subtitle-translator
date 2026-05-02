@@ -1,11 +1,11 @@
 """字幕翻譯主控腳本：一鍵串接解析 → 翻譯 → 輸出，每個字幕檔使用獨立的暫存目錄。
 
 用法：
-    python tools/run.py input/<檔名> [--model qwen2.5:7b]
+    python tools/run.py input/<檔名> [--model gemma3:12b]
 
 範例：
     python tools/run.py "input/Let's build GPT.txt"
-    python tools/run.py "input/My Video.srt" --model qwen2.5:7b
+    python tools/run.py "input/My Video.srt" --model gemma3:12b
 """
 
 import argparse

@@ -38,7 +38,7 @@ OLLAMA_URL = "http://localhost:11434/api/chat"
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models"
 
 # Backend defaults
-DEFAULT_MODELS = {"gemini": "gemini-2.0-flash", "ollama": "qwen2.5:7b"}
+DEFAULT_MODELS = {"gemini": "gemini-2.0-flash", "ollama": "gemma3:12b"}
 
 # Global state set in main()
 _backend = "gemini"
